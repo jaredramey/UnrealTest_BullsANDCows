@@ -50,10 +50,10 @@ EGuessStatus FBullCowGame::CheckGuessValidity(FString PlayerGuess) const
 		return EGuessStatus::NOT_ISOGRAM;
 	}
 	//If guess isn't all lowercase
-	else if (!IsLowercase(PlayerGuess))
+	/*else if (!IsLowercase(PlayerGuess))
 	{
 		return EGuessStatus::NOT_LOWERCASE;
-	}
+	}*/
 	//If guess isn't the same length
 	else if (PlayerGuess.length() != GetHiddenWordLength())
 	{
